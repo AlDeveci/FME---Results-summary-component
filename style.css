@@ -1,0 +1,214 @@
+@font-face {
+    font-family: "Inter";
+    font-weight: 500;
+    font-display: swap;
+    src: url("assets/fonts/static/HankenGrotesk-Medium.ttf")
+}
+
+@font-face {
+    font-family: "Inter";
+    font-weight: 700;
+    font-display: swap;
+    src: url("assets/fonts/static/HankenGrotesk-Bold.ttf")
+}
+
+@font-face {
+    font-family: "Inter";
+    font-weight: 800;
+    font-display: swap;
+    src: url("assets/fonts/static/HankenGrotesk-ExtraBold.ttf")
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  height: 100vh;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  word-wrap: break-word;
+  font-family: 'Inter', sans-serif;
+  letter-spacing: .1;
+}
+
+p {
+  margin: 0;
+}
+
+#wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: White;
+  max-width: 37rem;
+  box-shadow: rgba(50, 50, 93, 0.05) 0px 50px 100px -20px, rgba(0, 0, 0, 0.1) 0px 30px 60px -30px;
+  border-radius: 25px 25px;
+}
+
+#left-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  gap: 28px;
+  flex: 1;
+  border-radius: 25px 25px;
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  color: #fff;
+  padding: 2rem 2.5rem;
+}
+
+#right-side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+#stats {
+  display: flex;
+  flex-direction: column;
+  gap: .95rem;
+  font-size: 14px;
+}
+
+.stat {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 8px;
+  border-radius: 8px;
+}
+
+#first-stat {
+  background: hsla(0, 100%, 67%, .1);
+}
+
+#first-stat .first-half {
+  color: hsl(0, 100%, 67%);
+}
+
+#second-stat {
+  background: hsl(39, 100%, 56%, .1);
+}
+
+#second-stat .first-half {
+  color: hsl(39, 100%, 56%);
+}
+
+#third-stat {
+  background: hsl(166, 100%, 37%, .1);
+}
+
+#third-stat .first-half {
+  color: hsl(166, 100%, 37%);
+}
+
+#fourth-stat {
+  background: hsl(234, 85%, 45%, .1);
+}
+
+#fourth-stat .first-half {
+  color: hsl(234, 85%, 45%);
+}
+
+.first-half {
+  display: flex;
+  align-items: center;
+  gap: 8px
+}
+
+
+h2 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 26px;
+  margin: 0 0 12px;
+}
+
+#total-points {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  border-radius: 50%;
+  background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+  width: 150px;
+  height: 150px;
+}
+
+a {
+  text-align: center;
+  border-radius: 30px;
+  background: hsl(224, 30%, 27%);
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 8px;
+}
+
+a:hover, a:focus-visible {
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+.second-half p {
+  color: hsla(224, 30%, 27%, .5)
+}
+
+.font-size-14 {
+  font-size: 14px;
+}
+
+#score {
+  color: #fff;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.ext-bold {
+  font-weight: 800;
+}
+
+.big {
+  font-size: 56px;
+}
+
+#title-left, #message, #score-of {
+  color: hsla(221, 100%, 96%, .7);
+}
+
+.first-half img {
+  width: 16px;
+  height: auto;
+}
+
+.black {
+  color: hsl(224, 30%, 27%);
+}
+
+@media (max-width: 600px) {
+  #wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  body {
+    align-items: flex-start;
+  }
+
+  #left-side {
+    border-radius: 0 0 25px 25px;
+  }
+
+}
